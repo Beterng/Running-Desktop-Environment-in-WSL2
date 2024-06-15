@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ENV = "xfce4 xfce4-goodies"
-EXPDESKTOP = "Xephyr"
+let ENV = "xfce4 xfce4-goodies"
+let EXPDESKTOP = "Xephyr"
 
 while true
 do
@@ -13,6 +13,12 @@ do
 	echo "5. Exit"
 
     read Input
+
+	while true
+	do
+		[ $Input - lt "1" || $Input - gt "5"] && \ 
+			echo "Please type a correct option. "
+	
 done
 
 
