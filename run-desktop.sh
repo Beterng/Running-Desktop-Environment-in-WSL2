@@ -3,6 +3,7 @@
 let ENV = "xfce4 xfce4-goodies"
 let EXPDESKTOP = "Xephyr"
 
+# prinT and get Input from user.
 while true
 do
 	echo "1. Set Desktop INFO "
@@ -16,9 +17,16 @@ do
 
 	while true
 	do
-		[ $Input - lt "1" || $Input - gt "5"] && \ 
-			echo "Please type a correct option. "
-	
+		if [ $Input - lt "1" || $Input - gt "5"];
+		then 
+			echo "Please type a correct option. " 
+			read Input		
+		fi
+		
+		if  [$Input = "1" | $Input = " 2" | $Input = "3" | $Input = "4" | $Input = "5" ];
+		then
+			break
+	done
 done
 
 
