@@ -22,10 +22,11 @@ do
 			echo "Please type a correct option. " 
 			read Input		
 		fi
-		
+		# IS corect?
 		if  [$Input = "1" | $Input = " 2" | $Input = "3" | $Input = "4" | $Input = "5" ];
 		then
 			break
+		fi
 	done
 done
 
