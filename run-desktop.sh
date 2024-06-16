@@ -1,7 +1,7 @@
 #!/bin/bash
 
-let ENV = "xfce4 xfce4-goodies"
-let EXPDESKTOP = "Xephyr"
+ENV = "xfce4 xfce4-goodies"
+EXPDESKTOP = "Xephyr"
 
 # prinT and get Input from user.
 while true
@@ -28,6 +28,7 @@ do
 			break
 		fi
 	done
+ break
 done
 
 
